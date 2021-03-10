@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: MaisonNeue, sans-serif;
+  max-width: 100%;
+}
+
+body {
+  background-color: #F6F4F1;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 4vw;
+  padding: 10px 0;
+  color: #000;
+}
+
+.menu a:hover {
+  text-shadow: 0px 5px 35px #379DFC;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+section {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content .section:nth-child(2){
+  background-color: #FC3A1D;
+}
+
+.title1 {
+  width: 94vw;
+  position: absolute;
+  bottom: 3vw;
+  left: 3vw;
+}
+
+.image {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  top: 15%;
+}
+
+.image img {
+  height: 70vh;
+  width: auto;
+  box-shadow: 0px 15px 60px 0px rgba(0,0,0,0.25);
+}
+
+.title2 {
+  height: 90vh;
+  padding: 40px;
+  position: absolute;
+}
+
+.title2 img {
+  z-index: 2;
+  color: #000;
+}
+
+.image-wrapper {
+  display: grid;
+  align-self: center;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(106px, auto);
+  justify-items: stretch;
+  align-items: center;
+  width: 73vw;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+@media (max-width: 720px) {
+  .image-wrapper {
+    width: 40vw;
+  }
+
+  .image-left {
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .image-right {
+    grid-column: 1/3;
+    grid-row: 2;
+    margin: 0;
+  }
+}
+
+.image-wrapper img {
+  box-shadow: 0px 15px 60px 0px rgba(0,0,0,0.25);
+}
+
+.image-left {
+  transform: scale(0.75);
+}
+
+.image-right {
+  transform: scale(0.75);
+}
+
+.title3 {
+  width: 98vw;
+  position: relative;
+  top: 0.15vh;
+  left: 0.25vw;
+}
+
+.image3 {
+  /* display: flex; */
+  position: relative;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  top: -10%;
+  /* width: 60vw;
+  height: auto; */
+}
+
+.image3 img {
+  height: 60vh;
+  width: auto;
+  box-shadow: 0px 15px 60px 0px rgba(0,0,0,0.25);
+}

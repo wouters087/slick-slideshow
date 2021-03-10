@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scroll to Show</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+      @font-face {
+      font-family: MaisonNeue;
+      src: url("fonts/MaisonNeue-Book.otf");
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <nav class="menu">
+      <a href="#1">1</a>
+      <a href="#2">2</a>
+      <a href="#3">3</a>
+    </nav>
+
+    <div class="content">
+
+      <section id="1" class="section">
+        <div class="title1">
+          <img src="img/Bonjour.svg" alt="bonjour"></div>
+        <div class="image">
+          <img src="img/bonjourman.png" alt="man"></div>
+      </section>
+
+      <section id="2" class="section">
+        <div class="title2">
+          <img class="title2 "src="img/2.svg" alt="2"></div>
+        <div class="image-wrapper">
+          <img class="image-left" src="img/morf.png" alt="morf">
+          <img class="image-right" src="img/glass.png" alt="glass">
+        </div>
+      </section>
+
+      <section id="3" class="section">
+        <div class="title3">
+          <img class="title3" src="img/rocky.svg" alt="rocky"></div>
+        <div class="image3">
+          <img src="img/rock.png" alt="rock"></div>
+      </section>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+          $(".menu a").on('click', function(){
+            $("html, body").animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500); //500 = 0.5 seconde
+          })
+        });
+
+    </script>
+
+  </body>
+</html>
