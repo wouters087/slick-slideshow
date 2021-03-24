@@ -2,65 +2,70 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Scroll to Show</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Showcase Website</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
 
     <style>
       @font-face {
       font-family: MaisonNeue;
       src: url("fonts/MaisonNeue-Book.otf");
       }
+
+      @@font-face {
+        font-family: Eklektyk;
+        src: url("fonts/Eklektyk-Stencil.otf");
+        }
+      }
+
     </style>
 
   </head>
   <body>
 
-    <nav class="menu">
-      <a href="#1">1</a>
-      <a href="#2">2</a>
-      <a href="#3">3</a>
-    </nav>
-
-    <div class="content">
-
-      <section id="1" class="section">
-        <div class="title1">
-          <img src="img/Bonjour.svg" alt="bonjour"></div>
-        <div class="image">
-          <img src="img/bonjourman.png" alt="man"></div>
-      </section>
-
-      <section id="2" class="section">
-        <div class="title2">
-          <img class="title2 "src="img/2.svg" alt="2"></div>
-        <div class="image-wrapper">
-          <img class="image-left" src="img/morf.png" alt="morf">
-          <img class="image-right" src="img/glass.png" alt="glass">
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="images.html">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
 
-      <section id="3" class="section">
-        <div class="title3">
-          <img class="title3" src="img/rocky.svg" alt="rocky"></div>
-        <div class="image3">
-          <img src="img/rock.png" alt="rock"></div>
-      </section>
-
-    </div>
+      </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript">
 
-        $(function(){
-          $(".menu a").on('click', function(){
-            $("html, body").animate({
-              scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500); //500 = 0.5 seconde
-          })
-        });
+    <header class="showcase">
+      <div class="container showcase-inner">
 
-    </script>
+          <h1>Bonjour!</h1>
+          <p>So fancy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+      <div class="button" href="images.html">
+        <a>see pictures</a>
+      </div>
+
+
+      </div>
+
+    </header>
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>

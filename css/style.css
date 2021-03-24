@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: MaisonNeue, sans-serif;
   max-width: 100%;
 }
 
@@ -11,6 +10,7 @@ body {
 }
 
 .menu {
+  font-family: MaisonNeue, sans-serif;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -44,6 +44,7 @@ section {
 }
 
 .title1 {
+  font-family: MaisonNeue, sans-serif;
   width: 94vw;
   position: absolute;
   bottom: 3vw;
@@ -65,6 +66,7 @@ section {
 }
 
 .title2 {
+  font-family: MaisonNeue, sans-serif;
   height: 90vh;
   padding: 40px;
   position: absolute;
@@ -120,6 +122,7 @@ section {
 }
 
 .title3 {
+  font-family: MaisonNeue, sans-serif;
   width: 98vw;
   position: relative;
   top: 0.15vh;
@@ -141,4 +144,69 @@ section {
   height: 60vh;
   width: auto;
   box-shadow: 0px 15px 60px 0px rgba(0,0,0,0.25);
+}
+
+
+/* Homepage */
+
+header {
+  background: url(../img/rock.png) 0 0 no-repeat;
+  overflow: hidden;
+  height: 100%;
+  width: auto;
+  z-index: -1;
+}
+
+.hero-image {
+  background: rgba(29, 29, 29, 0.5);
+  overflow: hidden;
+  height: 100%;
+  z-index: 100;
+}
+
+/* img {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  object-fit: cover;
+} */
+
+h1 {
+  font-family: Eklektyk, serif;
+  text-transform: uppercase;
+  font-size: 27vw;
+  color: #F6F4F1;
+  text-align: center;
+  z-index: 2;
+}
+
+button {
+  font-family: MaisonNeue, sans-serif;
+  position: relative;
+}
+
+.scrollbutton {
+  padding: 30px 30px;
+  background-color: #F6F4F1;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.scrollbutton a {
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  color: #1d1d1d;
+}
+
+.main-text p {
+  font-family: MaisonNeue, sans-serif;
+  font-size: 1.4vw;
+  line-height: 2vw;
+  color: #F6F4F1;
+  max-width: 600px;
+  margin-left: 2vw;
+  margin-bottom: 40px;
 }
