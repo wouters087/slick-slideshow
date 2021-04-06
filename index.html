@@ -7,21 +7,21 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
 
     <style>
+      @import url("https://use.typekit.net/cmm2gdx.css");
       @font-face {
       font-family: MaisonNeue;
       src: url("fonts/MaisonNeue-Book.otf");
       }
 
-      @@font-face {
-        font-family: Eklektyk;
-        src: url("fonts/Eklektyk-Stencil.otf");
+      @font-face {
+        font-family: CLM-CHALLENGE02;
+        src: url("fonts/CLM-CHALLENGE02.otf");
         }
       }
-
     </style>
 
   </head>
-  <body>
+  <body class="css-transitions-only-after-page-load">
 
     <div class="menu-wrap">
       <input type="checkbox" class="toggler">
@@ -30,7 +30,7 @@
         <div>
           <div>
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="images.html">Projects</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
@@ -46,19 +46,41 @@
     <header class="showcase">
       <div class="container showcase-inner">
 
-          <h1>Bonjour!</h1>
+          <h1>Bonjour</h1>
           <p>So fancy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-      <div class="button" href="images.html">
-        <a>see pictures</a>
-      </div>
+          <aside id="sidebutton">
+            <a class="button" href="images.html">see pictures</a>
+          </aside>
 
-
-      </div>
+        </div>
 
     </header>
 
 
+    <div class="container2">
+
+      <div class="wrapper2">
+        <div class="box box1">
+          <img src="img/bonjourman.png" alt="man">
+        </div>
+        <div class="box box2">
+          <h3><span>Bonjour</span><br>Man</h3>
+          <div class="textbutton">
+            <a href="#">View Project</a>
+          </div>
+        </div>
+
+        <div class="box box3">
+          <h3>Crazy red woman</h3>
+            <p>At nomnom, we’re paying homage to our favorite foods, while reimagining them for our modern diets—with high-quality ingredients that taste just as good as we remember.</p>
+        </div>
+        <div class="box box4">
+          <img src="img/morf.png" alt="morfing">
+        </div>
+      </div>
+
+    </div>
 
 
 
@@ -68,4 +90,11 @@
 
 
   </body>
+
+  <script src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+      $("body").removeClass("css-transitions-only-after-page-load");
+    });
+    </script>
 </html>
