@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: MaisonNeue, serif;
   line-height: 1.6;
@@ -72,7 +76,7 @@ h1 {
   position: absolute;
   font-size: 1.25vw;
   line-height: 1.5em;
-  max-width: 36vw;
+  max-width: 37vw;
   margin-bottom: 40px;
   bottom: 20px;
 }
@@ -93,6 +97,7 @@ h1 {
   position: absolute;
   bottom: 50px;
   right: 35px;
+  transition: 0.5s;
 }
 
 .button:hover {
@@ -137,11 +142,16 @@ h1 {
 
 .textbutton a {
   color: inherit;
+  transition: 0.5s;
 }
 
 .textbutton a:hover {
   color: #FC3A1D;
   transition: 0.5s ease;
+}
+
+.right {
+  text-align: right;
 }
 
 h3 {
@@ -186,7 +196,7 @@ h3 {
 
 .box3 {
   grid-column: 17/23;
-  grid-row: 8/17;
+  grid-row: 9/17;
 }
 
 .box3 img {
@@ -244,7 +254,7 @@ h3 {
 }
 
 .box6 {
-  grid-column: 12/16;
+  grid-column: 11/15;
   grid-row: 26/28;
   padding: 20px 0px;
 }
@@ -263,6 +273,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.box6 h3{
+  text-align: right;
+}
+
 .number3 {
   grid-column: 15/20;
   grid-row: 24/28;
@@ -275,4 +289,52 @@ h3 {
   line-height: 0.5em;
   color: #1D1D1D;
   padding-left: 20px;
+}
+
+
+.wrapper {
+  max-width: 70em;
+	margin: 0 auto 10em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+h4 {
+  font-family: freight-display-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 1.1em;
+  margin: 0;
+  color: #1D1D1D;
+}
+
+.content-title {
+  margin-right: 1em;
+}
+
+.side-text {
+  margin-right: 3em;
+}
+
+.big-button {
+  font-family: freightbigcmp-pro, serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 12vw;
+  line-height: 0.8em;
+  margin: 0;
+  padding-bottom: 220px;
+  text-align: center;
+}
+
+.big-button a {
+  text-decoration: none;
+  color: #1D1D1D;
+  transition: 0.5s;
+}
+
+.big-button a:hover {
+  color: #FC3A1D;
+  transition: 0.5s;
 }
